@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    margin-top: 50px;
+}
+
+button {
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background: rgb(40, 40, 40);
+    color: white;
+    cursor: pointer;
+    transition: border-radius 0.5s ease-in, background-color 1.5s ease-out;
+}
+
+button:hover {
+    transition: border-radius 1.5s ease-in, background-color 0.5s ease-out;
+    border-radius: 10px;
+}
+
+button.warning:hover {
+    background: rgb(255, 0, 0);
+}
+
+button.success:hover {
+    background: rgb(0, 255, 0);
+}
